@@ -15,8 +15,26 @@ CharacterDisplayRenderer renderer(new LiquidCrystalAdapter(&lcd, 16, 2), 16, 2);
 LcdMenu menu(renderer);
 
 // some strings for displaying the features
-char programVersion[] = "0.0.1";
+char programVersion[] = "1.0.0";
 char featureString[] = "f: ";
+char newFeatureA[] = "A";
+char newFeatureB[] = "B";
+
+/*-----------------------------------------------------------------------------
+ *  Function with new feature
+ -----------------------------------------------------------------------------*/
+void fA()
+{
+    strcat(featureString, newFeatureA);
+}
+
+/*-----------------------------------------------------------------------------
+ *  Function with new feature
+ -----------------------------------------------------------------------------*/
+void fB()
+{
+    strcat(featureString, newFeatureB);
+}
 
 /*-----------------------------------------------------------------------------
  *  setup function
@@ -31,6 +49,8 @@ void setup()
 	lcd.print(programVersion);
 
     // integrate new features hereafter
+   fA();
+   fB();
 
     // display new features
     lcd.setCursor(0,1);
