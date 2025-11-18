@@ -19,6 +19,7 @@ char programVersion[] = "1.0.0";
 char featureString[] = "f: ";
 char newFeatureA[] = "A";
 char newFeatureB[] = "B";
+char newFeatureC[] = "C";
 
 /*-----------------------------------------------------------------------------
  *  Function with new feature
@@ -35,6 +36,15 @@ void fB()
 {
     strcat(featureString, newFeatureB);
 }
+
+/*-----------------------------------------------------------------------------
+ *  Function with new feature
+ -----------------------------------------------------------------------------*/
+void fC()
+{
+    strcat(featureString, newFeatureC);
+}
+
 
 /*-----------------------------------------------------------------------------
  *  setup function
