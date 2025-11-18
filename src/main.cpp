@@ -19,6 +19,8 @@ char programVersion[] = "1.0.0";
 char featureString[] = "f: ";
 char newFeatureA[] = "A";
 char newFeatureB[] = "B";
+char newFeatureD[] = "D";
+
 
 /*-----------------------------------------------------------------------------
  *  Function with new feature
@@ -36,6 +38,14 @@ void fB()
     strcat(featureString, newFeatureB);
 }
 
+ /*-----------------------------------------------------------------------------
+ *  Function with new feature
+ -----------------------------------------------------------------------------*/
+void fD()
+{
+    strcat(featureString, newFeatureD);
+}
+
 /*-----------------------------------------------------------------------------
  *  setup function
  -----------------------------------------------------------------------------*/
@@ -51,6 +61,7 @@ void setup()
     // integrate new features hereafter
    fA();
    fB();
+   fD();
 
     // display new features
     lcd.setCursor(0,1);
